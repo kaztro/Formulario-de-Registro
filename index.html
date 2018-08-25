@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Register</title>
 </head>
 <body>
-    
+    <form action="url" method="get">
+    <h1>Register Form</h1>
+    <fieldset>
+        <legend>Personal</legend>
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Jhon Doe" id="name" name="personal" required>
+        <label for="birth">Birthdate:</label>
+        <input type="date" min="2000-01-01" id="birth" name="personal" max="2018-12-31" required>
+        <label for="an">Favorite Animal:</label>
+        <input type="text" name="personal" id="an" placeholder="Panda">
+    </fieldset>
+    <br><br>
+    <fieldset>
+        <legend>Account</legend>
+        <label for="em">Email:</label>
+        <input type="email" name="Account" id="em" placeholder="doe@uca.edu.sv" required>
+        <label for="pas1">Password:</label>
+        <input type="password" name="Account" id="pas1" pattern="[0-9a-fA-F]{4,8}" placeholder="Enter an ID consisting of 4-8 hexadecimal digits"
+        maxlength="8" minlength="4" required>
+        <label for="pas2">Verify Password:</label>
+        <input type="password" name="Account" id="pas2" pattern="[0-9a-fA-F]{4,8}"  maxlength="8" minlength="4" required>        
+    </fieldset>
+    <br><br>
+    <fieldset>
+        <legend>Contact</legend>
+        <fieldset>
+            <legend>Adress</legend>
+            <label for="adr">Adress:</label>
+            <input type="text" name="Adress" id="adr" required>
+            <label for="cit">City:</label>
+            <input type="text" name="Adress" id="cit" required>
+            <label for="country">Country:</label>
+            <input type="text" name="Adress" id="country" required>
+        </fieldset>
+        <label for=tel"">Phone Number:</label>
+        <input type="tel" minlength="9" maxlength="9" id="tel" required>
+    </fieldset>
+    <br>
+    <div>
+        <input type="submit" value="Register Now">
+    </div>
+    </form>
 </body>
 </html>
